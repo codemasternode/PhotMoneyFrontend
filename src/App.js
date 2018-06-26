@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import Loadable from 'react-loadable';
 import NavWrapper from './components/NavWrapper'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
-import Login from './components/Login'
-import Register from './components/Register'
+import * as Page from './pages/index'
+import { Container, Row } from 'mdbreact'
 
 import 'font-awesome/css/font-awesome.min.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -16,10 +16,15 @@ const App = () => (
     <div>
         <NavWrapper />
         <BrowserRouter>
-            <Switch>
-                <Route component={Login} path="/login"/>
-                <Route component={Register} path="/register"/>
-            </Switch>
+            <Container>
+                <Switch>
+
+                    <Route component={Page.Login} path="/login" />
+                    <Route component={Page.Register} path="/register" />
+                    <Route component={Page.Home} path="/" />
+
+                </Switch>
+            </Container>
         </BrowserRouter>
     </div>
 )

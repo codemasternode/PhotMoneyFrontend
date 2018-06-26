@@ -1,0 +1,7 @@
+export * from './Gallery'
+export * from './Dashboard'
+export * from './Home'
+export * from './Login'
+export * from './Payments'
+export * from './Profile'
+export * from './Register'
