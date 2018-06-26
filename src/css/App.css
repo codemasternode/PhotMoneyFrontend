@@ -1,0 +1,10 @@
+@font-face {
+  font-family: Bree-Serif;
+  src: url('../assets/BreeSerif-Regular.otf') format('opentype');
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Bree-Serif !important;
+}

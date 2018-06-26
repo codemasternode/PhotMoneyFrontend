@@ -1,20 +1,27 @@
 import React, { Component } from 'react';
 import Loadable from 'react-loadable';
-import { connect } from 'react-redux';
+import NavWrapper from './components/NavWrapper'
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
+import Login from './components/Login'
+import Register from './components/Register'
 
-import './App.css';
+import 'font-awesome/css/font-awesome.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'mdbreact/dist/css/mdb.css';
+
+import './css/App.css';
 
 
-class App extends Component {
+const App = () => (
+    <div>
+        <NavWrapper />
+        <BrowserRouter>
+            <Switch>
+                <Route component={Login} path="/login"/>
+                <Route component={Register} path="/register"/>
+            </Switch>
+        </BrowserRouter>
+    </div>
+)
 
-
-    render() {
-        return (
-            <div className="App">
-
-            </div>
-        );
-    }
-}
-
-export default connect()(App);
+export default App
