@@ -35,4 +35,4 @@ function mapStateToProps() {
     }
 }
 
-export default connect()(PannelWrapper)
+export default connect()(PannelWrapper(Pannel))

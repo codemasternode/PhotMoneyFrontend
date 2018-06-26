@@ -14,6 +14,7 @@ class Nav extends React.Component {
         };
         this.onClick = this.onClick.bind(this);
         this.toggle = this.toggle.bind(this);
+        
     }
 
     onClick() {
@@ -52,10 +53,10 @@ class Nav extends React.Component {
                             <NavbarNav right>
                                 <NavItem className="nav-item-right-custom">
                                     <NavLink to="#">
-                                        <i className="fa fa-2x fa-user"></i>
+                                        <i className="fa size fa-user"></i>
                                     </NavLink>
                                     <NavLink to="#">
-                                        <i className="fa fa-2x fa-plus"></i>
+                                        <i className="fa size fa-plus"></i>
                                     </NavLink>
                                 </NavItem>
                             </NavbarNav>
