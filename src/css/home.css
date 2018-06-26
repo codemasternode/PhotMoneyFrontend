@@ -1,0 +1,27 @@
+.main {
+    background: linear-gradient(135deg, rgba(0,0,0,1) 0%, rgba(43,43,42,1) 0%, rgba(74,74,74,1) 0%, rgba(64,64,56,1) 0%, rgba(105,105,99,1) 0%, rgba(0,0,0,1) 0%, rgba(54,53,54,0.95) 32%, rgba(186,189,104,0.89) 74%, rgba(217,213,100,0.86) 91%, rgba(249,255,61,0.85) 100%);
+    color: yellow;
+    display: flex;
+    justify-content: center;
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+    margin-top: 10px;
+}
+.banner {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.banner h1,h2 {
+    text-align: center;
+}
+
+.join {
+    width: 200px;
+    display: block;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-top: 50px !important;
+    font-size: 24px !important;
+}

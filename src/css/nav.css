@@ -2,7 +2,9 @@
     display: flex;
     
 }
-
 i {
     color: #EBE843;
+}
+.nav a {
+    font-size: 20px;
 }

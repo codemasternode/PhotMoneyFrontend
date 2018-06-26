@@ -16,15 +16,12 @@ const App = () => (
     <div>
         <NavWrapper />
         <BrowserRouter>
-            <Container>
-                <Switch>
+            <Switch>
+                <Route component={Page.Login} path="/login" />
+                <Route component={Page.Register} path="/register" />
+                <Route component={Page.Home} path="/" />
 
-                    <Route component={Page.Login} path="/login" />
-                    <Route component={Page.Register} path="/register" />
-                    <Route component={Page.Home} path="/" />
-
-                </Switch>
-            </Container>
+            </Switch>
         </BrowserRouter>
     </div>
 )

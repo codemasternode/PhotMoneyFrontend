@@ -40,7 +40,7 @@ class Nav extends React.Component {
                         <Collapse isOpen={this.state.collapse} navbar>
                             <NavbarNav left>
                                 <NavItem>
-                                    <NavLink to="#">Home</NavLink>
+                                    <NavLink to="/">Home</NavLink>
                                 </NavItem>
                                 <NavItem>
                                     <NavLink to="#">Features</NavLink>
