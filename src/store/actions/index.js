@@ -1,2 +1,2 @@
 export * from './galleries.actions'
-export * from './user.actions'
+export * from './customer.actions'

@@ -17,8 +17,8 @@ const App = () => (
         <NavWrapper />
         <BrowserRouter>
             <Switch>
-                <Route component={Page.Login} path="/login" />
                 <Route component={Page.Register} path="/register" />
+                <Route component={Page.Login} path="/login" />
                 <Route component={Page.Home} path="/" />
 
             </Switch>

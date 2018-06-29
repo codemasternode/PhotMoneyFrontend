@@ -2,11 +2,18 @@ import React from 'react'
 import { Container } from 'mdbreact'
 import { Field, reduxForm } from 'redux-form'
 import { connect } from 'react-redux'
+import { customerActions } from '../store/actions'
 
-const Register = (props) => (
+const RegisterPage = (props) => (
     <div>Register</div>
 )
 
-export default reduxForm({
+function mapStateToProps({ register }) {
+    return { register }
+}
+
+const register = reduxForm({
     form: 'register'
-})(connect(mapStateToProps,)(Register))
+})(connect(mapStateToProps)(RegisterPage))
+
+export { register as Register }

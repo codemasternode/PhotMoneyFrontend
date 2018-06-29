@@ -34,7 +34,7 @@ class Nav extends React.Component {
             <Router>
                 <Navbar color="elegant-color" dark expand="md" scrolling className="nav">
                     <Container>
-                        <NavbarBrand href="/">
+                        <NavbarBrand to="/">
                             <img src={require('../assets/logo.png')} alt="logo" width="70" />
                         </NavbarBrand>
                         {!this.state.isWideEnough && <NavbarToggler onClick={this.onClick} />}
@@ -52,10 +52,10 @@ class Nav extends React.Component {
                             </NavbarNav>
                             <NavbarNav right>
                                 <NavItem className="nav-item-right-custom">
-                                    <NavLink to="#">
+                                    <NavLink to="/login">
                                         <i className="fa size fa-user"></i>
                                     </NavLink>
-                                    <NavLink to="#">
+                                    <NavLink to="/register">
                                         <i className="fa size fa-plus"></i>
                                     </NavLink>
                                 </NavItem>
